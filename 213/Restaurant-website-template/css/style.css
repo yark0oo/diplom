@@ -1,0 +1,112 @@
+body{
+	font-family: 'Lora', serif;
+/*	font-weight: 200;*/
+	font-size: 1rem;
+  	color: #000;
+
+}
+
+.letter-spacing, h1, h5, h6{
+	letter-spacing: 3px;
+}
+
+.bg-light{
+	background-color: #FFFFFF !important;
+}
+
+.navbar-brand{
+  font-size: 1rem;
+}
+
+.navbar-light .navbar-nav .nav-link{
+	color: rgba(0, 0, 0, 1);
+}
+
+.navbar-light .navbar-brand:hover, .navbar-light .navbar-nav .nav-link:hover{
+	background-color: #ccc;
+	color: inherit;
+}
+
+.row{
+	min-height: 100vh;
+}
+
+.home{
+	background-image: radial-gradient(rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 1)), url('../assets/hamburger.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+address{
+		color: rgb(96, 125, 139);
+}
+
+input.form-control{
+		border-top: none ;
+		border-left: none ;
+		border-right: none ;
+		padding: 2rem .5rem;
+		height: auto;
+		border-bottom-width: 2px;
+}
+
+
+select.form-control{
+	height: auto;
+}
+
+.form-control:focus{
+	box-shadow: none;
+	animation: moveunderline 10s ease-in-out infinite;
+}
+
+@keyframes moveunderline{
+	0%{
+		border-color: #0000ff;
+	}
+	
+	50%{
+		border-color: #ff00ff;
+	}
+	
+	100%{
+		border-color: #0000ff;
+	}
+}
+
+.btn-submit{
+		background-color: #F1F1F1;
+}
+
+.btn-submit:hover{
+		background-color: #ccc;
+}
+
+.footer{
+		min-height: 10rem;
+		background-color: #F1F1F1
+}
+
+.img{
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+@media only screen and (max-width: 768px){
+	.img{
+		height: 50vh;
+	}
+	
+	.home{
+/*		transform: scale(0.1)*/
+/*		background-size: 300% */
+		background-position: 43%
+	}
+}
+
+.py-66{
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
